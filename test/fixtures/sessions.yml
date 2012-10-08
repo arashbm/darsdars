@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  course_id: 1
+  start: 2012-10-07 18:23:58
+  finish: 2012-10-07 18:23:58
+  instructor: MyString
+  session_type: MyString
+  weekday: 1
+
+two:
+  course_id: 1
+  start: 2012-10-07 18:23:58
+  finish: 2012-10-07 18:23:58
+  instructor: MyString
+  session_type: MyString
+  weekday: 1
