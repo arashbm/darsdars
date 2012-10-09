@@ -17,7 +17,7 @@ class CoursesController < ApplicationController
   end
 
   def edit
-    @couerse = @courses.find(params[:id])
+    @course = @courses.find(params[:id])
   end
 
   def create

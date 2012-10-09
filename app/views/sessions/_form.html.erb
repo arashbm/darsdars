@@ -1,13 +1,12 @@
-<%= simple_form_for(@session) do |f| %>
+<%= simple_form_for([@course, @session]) do |f| %>
   <%= f.error_notification %>
 
   <div class="form-inputs">
-    <%= f.input :course_id %>
-    <%= f.input :start %>
-    <%= f.input :finish %>
+    <%= f.input :start,:minute_step => 5  %>
+    <%= f.input :finish, :minute_step => 5  %>
     <%= f.input :instructor %>
-    <%= f.input :session_type %>
-    <%= f.input :weekday %>
+    <%= f.input :session_type, collection: ['ارائه‌ی درس', 'حل تمرین', 'آزمایشگاه'] %>
+    <%= f.input :weekday, collection:{'شنبه'=>6, 'یکشنبه'=> 0, 'دوشنبه' => 1, 'سه‌شنبه'=> 2, 'چهارشنبه'=>3, 'پنج‌شنبه'=>4, 'جمعه'=>5} %>
   </div>
 
   <div class="form-actions">

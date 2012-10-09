@@ -1,0 +1,9 @@
+<h1>ویرایش اطلاعات فردی</h1>
+<%= simple_form_for @student, url: student_path do |f| %>
+  <div class='form-inputs'>
+    <%= f.association :courses, :label_method => :topic, :as => :check_boxes %>
+  </div>
+  <div class='form-actions'>
+    <%= f.button :submit %>
+  </div>
+<% end %>

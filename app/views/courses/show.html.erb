@@ -1,14 +1,13 @@
-<%- model_class = Course -%>
 <div class="page-header">
-  <h1><%=t '.title', :default => model_class.model_name.human %></h1>
+  <h1><%= @course.topic %></h1>
 </div>
 
-<dl class="dl-horizontal">
-  <dt><strong><%= model_class.human_attribute_name(:topic) %>:</strong></dt>
-  <dd><%= @course.topic %></dd>
-  <dt><strong><%= model_class.human_attribute_name(:units) %>:</strong></dt>
-  <dd><%= @course.units %></dd>
-</dl>
+<p><strong><%= Course.human_attribute_name(:topic) %>:</strong>
+  <%= @course.topic %></p>
+<p><strong><%= Course.human_attribute_name(:units) %>:</strong>
+  <%= @course.units %></p>
+<p><strong><%= Course.human_attribute_name(:sessions) %>:</strong>
+  <%= sessions_summery @course %></p>
 
 <div class="form-actions">
   <%= link_to t('.back', :default => t("helpers.links.back")),
