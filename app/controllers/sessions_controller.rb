@@ -7,6 +7,11 @@ class SessionsController < ApplicationController
     respond_with(@course, @sessions)
   end
 
+  def show
+    @session = @sessions.find params[:id]
+    respond_with @session
+  end
+
   def new
     @session = @sessions.new
     respond_with(@course, @session)
