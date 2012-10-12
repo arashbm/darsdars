@@ -5,4 +5,15 @@ fa:
   devise:
     sessions:
       sign_in: ورود
+    registerable:
       sign_up: ثبت نام
+    passwords:
+      forgot_password: رمز عبور را فراموش کرده‌اید؟
+      recover_password: بازنشانی رمز عبور
+  activerecord:
+    models:
+      student: دانشجو
+    attributes:
+      email: ایمیل
+      password: رمز عبور
+      password_confirmation: تکرار رمز عبور
