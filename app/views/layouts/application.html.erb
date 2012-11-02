@@ -57,11 +57,11 @@
                   <a href="#" data-toggle='dropdown' class='dropdown-toggle'>خوش‌آمدی، <%= current_student.email  %> <b class='caret'></b></a>
                   <ul class='dropdown-menu'>
                     <li><%= link_to '<i class="icon-cog"></i> تنظیمات'.html_safe, '#' %></li>
-                    <li><%= link_to '<i class="icon-share"></i> خروج'.html_safe, destroy_student_session_path, method: :delete %></li>
+                    <li><%= link_to '<i class="icon-off"></i> خروج'.html_safe, destroy_student_session_path, method: :delete %></li>
                   </ul>
                 </li>
               <% else %>
-                <li><%= t 'devise.sign_in' %></li>
+                <li><%= link_to t('devise.sessions.sign_in'), new_student_session_path %></li>
               <% end %>
             </ul>
           </div><!--/.nav-collapse -->

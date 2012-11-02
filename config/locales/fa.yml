@@ -20,6 +20,7 @@ fa:
       course:
         units: تعداد واحد
         topic: عنوان درس
+        sessions: جلسات هفتگی
   helpers:
     links:
       new: جدید

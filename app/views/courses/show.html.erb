@@ -2,12 +2,10 @@
   <h1><%= @course.topic %></h1>
 </div>
 
-<p><strong><%= Course.human_attribute_name(:topic) %>:</strong>
-  <%= @course.topic %></p>
-<p><strong><%= Course.human_attribute_name(:units) %>:</strong>
-  <%= @course.units %></p>
-<p><strong><%= Course.human_attribute_name(:sessions) %>:</strong>
-  <%= sessions_summery @course %></p>
+<div><strong><%= Course.human_attribute_name(:units) %>:</strong>
+  <%= @course.units %></div>
+<div><strong><%= Course.human_attribute_name(:sessions) %>:</strong>
+  <p><%= sessions_summery @course %></p><%= link_to 'جلسه‌ی هفتگی جدید', new_course_session_path(@course), class: 'btn btn-small' %></div>
 
 <div class="form-actions">
   <%= link_to t('.back', :default => t("helpers.links.back")),
