@@ -6,3 +6,22 @@ fa:
     sessions:
       sign_in: ورود
       sign_up: ثبت نام
+  activerecord:
+    models:
+      session: جلسات
+      course: دروس
+    attributes:
+      session:
+        instructor: مدرس
+        session_type: نوع جلسه
+        weekday: روز هفته
+        start: شروع
+        finish: پایان
+      course:
+        units: تعداد واحد
+        topic: عنوان درس
+  helpers:
+    links:
+      new: جدید
+      edit: ویرایش
+      destroy: حذف
