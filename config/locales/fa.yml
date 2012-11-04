@@ -1,6 +1,3 @@
-# Sample localization file for English. Add more files in this directory for other locales.
-# See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
-
 fa:
   devise:
     sessions:
@@ -13,7 +10,25 @@ fa:
   activerecord:
     models:
       student: دانشجو
+      session: جلسات
+      course: دروس
     attributes:
-      email: ایمیل
-      password: رمز عبور
-      password_confirmation: تکرار رمز عبور
+      student:
+        email: ایمیل
+        password: رمز عبور
+        password_confirmation: تکرار رمز عبور
+      session:
+        instructor: مدرس
+        session_type: نوع جلسه
+        weekday: روز هفته
+        start: شروع
+        finish: پایان
+      course:
+        units: تعداد واحد
+        topic: عنوان درس
+        sessions: جلسات هفتگی
+  helpers:
+    links:
+      new: جدید
+      edit: ویرایش
+      destroy: حذف
